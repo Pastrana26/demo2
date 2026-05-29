@@ -28,4 +28,6 @@ El archivo `render.yaml` crea un Web Service con Docker. En Render, agrega los v
 - `SPRING_DATASOURCE_USERNAME`
 - `SPRING_DATASOURCE_PASSWORD`
 
+`SPRING_DATASOURCE_URL` puede usar formato JDBC (`jdbc:postgresql://...`) o el formato de Neon (`postgresql://usuario:password@host/db?...`). Si usas `DATABASE_URL`, tambien se detecta automaticamente.
+
 No subas `.env` a GitHub.
